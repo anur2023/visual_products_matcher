@@ -4,28 +4,16 @@ emoji: 🔍
 colorFrom: blue
 colorTo: purple
 sdk: docker
-sdk_version: "4.0.0"
-app_file: app.py
+app_file: Dockerfile
 pinned: false
 ---
 
 # Visual Product Matcher
 
-A web application that finds visually similar products using AI.
+A web application that helps users find visually similar products based on uploaded images.
 
 ## Features
-- Image upload
-- URL input
-- Visual similarity matching
+- Image upload (file or URL)
+- Visual product matching
+- Filtering by similarity score
 - Mobile responsive design
-
-## How to Use
-1. Upload an image or paste URL
-2. Click "Find Similar Products"
-3. View results with similarity scores
-
-## Technology Stack
-- Backend: FastAPI, Python
-- Frontend: HTML, CSS, JavaScript, Bootstrap
-- AI Model: CLIP by OpenAI
-- Database: Supabase
