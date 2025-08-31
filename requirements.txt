@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+supabase
+pillow
+requests
+python-multipart
+python-dotenv
+transformers
+torch
+numpy
