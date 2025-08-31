@@ -1,44 +1,31 @@
+---
+title: Visual Product Matcher
+emoji: 🔍
+colorFrom: blue
+colorTo: purple
+sdk: docker
+sdk_version: "4.0.0"
+app_file: app.py
+pinned: false
+---
+
 # Visual Product Matcher
 
-A web application that helps users find visually similar products based on uploaded images.
+A web application that finds visually similar products using AI.
 
 ## Features
+- Image upload
+- URL input
+- Visual similarity matching
+- Mobile responsive design
 
-- Image upload via file selection or drag & drop
-- URL-based image processing
-- Visual similarity matching using CLIP embeddings
-- Filter results by similarity score
-- Mobile-responsive design
+## How to Use
+1. Upload an image or paste URL
+2. Click "Find Similar Products"
+3. View results with similarity scores
 
-## Tech Stack
-
-- **Backend**: FastAPI, Python, Supabase
-- **Frontend**: HTML, CSS, JavaScript, Bootstrap
-- **AI/ML**: Hugging Face Transformers (CLIP model)
-- **Database**: Supabase with pgvector
-- **Hosting**: Hugging Face Spaces
-
-## Setup Instructions
-
-1. Clone this repository
-2. Set up environment variables:
-   - `SUPABASE_URL`: Your Supabase project URL
-   - `SUPABASE_KEY`: Your Supabase service role key
-3. Install dependencies: `pip install -r requirements.txt`
-4. Run the application: `uvicorn main:app --host 0.0.0.0 --port 7860`
-
-## Deployment to Hugging Face
-
-1. Create a new Space on Hugging Face
-2. Set the Space hardware to CPU Basic
-3. Add your Supabase credentials as secrets in the Space settings
-4. Push your code to the Space repository
-
-## Database Setup
-
-The application requires a Supabase database with a `products` table containing:
-- Product metadata (name, category, price, etc.)
-- CLIP embeddings vector column (512 dimensions)
-- Image URLs
-
-Use the provided data ingestion script to populate your database.
+## Technology Stack
+- Backend: FastAPI, Python
+- Frontend: HTML, CSS, JavaScript, Bootstrap
+- AI Model: CLIP by OpenAI
+- Database: Supabase
